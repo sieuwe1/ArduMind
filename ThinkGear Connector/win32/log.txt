@@ -1,0 +1,14 @@
+2013-09-02 12:29:27.7773|INFO|NeuroSky.ThinkGear.Connector|Connector initialized.
+2013-09-02 12:29:53.5283|INFO|NeuroSky.ThinkGear.Connector|Connector initialized.
+2013-09-02 12:33:14.9824|INFO|NeuroSky.ThinkGear.Connector|Connector initialized.
+2013-09-02 12:33:55.8935|INFO|NeuroSky.ThinkGear.Connector|Connector initialized.
+2013-09-02 13:20:10.8525|INFO|NeuroSky.ThinkGear.Connector|Connector initialized.
+2013-09-02 13:20:33.6152|INFO|NeuroSky.ThinkGear.Connector|Connector initialized.
+2013-09-02 13:21:05.3271|INFO|NeuroSky.ThinkGear.Connector|Connector initialized.
+2013-09-02 13:35:34.4472|INFO|NeuroSky.ThinkGear.Connector|Connector initialized.
+2013-09-02 13:43:06.2626|INFO|NeuroSky.ThinkGear.Connector|Connector initialized.
+2013-09-02 13:57:20.1406|INFO|NeuroSky.ThinkGear.Connector|Connector initialized.
+2013-09-02 14:59:59.8164|INFO|NeuroSky.ThinkGear.Connector|Connector initialized.
+2013-09-02 15:06:37.0888|INFO|NeuroSky.ThinkGear.Connector|Connector initialized.
+2013-09-03 08:37:21.1379|INFO|NeuroSky.ThinkGear.Connector|Connector initialized.
+2013-09-03 08:38:11.2190|INFO|NeuroSky.ThinkGear.Connector|Connector initialized.

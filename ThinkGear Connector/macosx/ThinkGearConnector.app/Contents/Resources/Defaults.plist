@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>versionNumber</key>
+	<string>#{COMMIT_HASH}</string>
+	<key>defaultPort</key>
+	<string>/dev/tty.MindSet-DevB</string>
+	<key>enableStartOnBoot</key>
+	<true/>
+	<key>enableNotifications</key>
+	<true/>
+	<key>enableDebugging</key>
+	<false/>
+</dict>
+</plist>

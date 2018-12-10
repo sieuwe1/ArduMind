@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>CFBundleIconFile</key>
+    <string>icon.icns</string>
+    <key>CommitHash</key>
+    <string>#COMMITHASH#</string>
+    <key>LSUIElement</key>
+    <true />
+    <key>CFBundleIdentifier</key>
+    <string>com.NeuroSky.ThinkGearConnector</string>
+    <key>CFBundleName</key>
+    <string>ThinkGear Connector</string>
+    <key>CFBundleVersion</key>
+    <string>2.0.1</string>
+    <key>CFBundleShortVersionString</key>
+    <string>2.0</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>10.5</string>
+    <key>NSMainNibFile</key>
+    <string>MainMenu</string>
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>English</string>
+    <key>CFBundleExecutable</key>
+    <string>ThinkGearConnector</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleSignature</key>
+    <string>????</string>
+  </dict>
+</plist>
