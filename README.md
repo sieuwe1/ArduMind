@@ -1,7 +1,20 @@
 # ArduMind
 A Simple to use template for creating your own Mind controlled Arduino projects with C# and the Neurosky EEG Headset
 
-### Actual code, a Instructable tutorial and a youtube video will come online soon!
+# Moodlight Example
+The Moodlight app uses a arduino with a RGB led to show the current meditation value of the user. The meditation value changes when the user becomes more stressed. This app converts the meditation value between 0 and 100 to a rg value for the RGB Led. The RGB led will be green when the user is unstressed an will turn less green and more red when the user becomes more stressed. In the middle the color will be yellow.
+
+To run the Moodlight example make sure to change the "COM8" value here  
+```csharp
+port = new SerialPort("COM8", 115200, Parity.None, 8, StopBits.One); To the rigt value of 
+```
+to the right COM value of your Arduino. Check Device manager if you are not sure which Comport to use.
+
+Also upload the Moodlight.ino code to the Arduino and enjoy!
+
+### Common problem running the moodlight app
+Because the MindWave uses the same CH340G serial chip as cheap arduino clones use there is a issue with the drivers. becuase of this issue you cant upload code to your arduino with the Arduino IDE. A workaround is to remove the Mindwave driver and install the original CH340G driver. Then upload to the Arduino. After that remove the CH340G driver and reinstall the Mindwave driver. Now you can run the app with both the arduino and the mindwave adapter connected to the computer. They work fine together you only cant upload code to the Arduino. 
+
 
 # Short instrutions
 
