@@ -10,6 +10,10 @@ port = new SerialPort("COM8", 115200, Parity.None, 8, StopBits.One); To the rigt
 ```
 to the right COM value of your Arduino. Check Device manager if you are not sure which Comport to use.
 
+Do the same for the Mindwave headset Comport here
+```csharp
+connector.ConnectScan("COM3");
+```
 Also upload the Moodlight.ino code to the Arduino and enjoy!
 
 ### Common problem running the moodlight app
