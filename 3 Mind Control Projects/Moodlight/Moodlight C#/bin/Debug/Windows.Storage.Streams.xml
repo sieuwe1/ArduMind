@@ -1,0 +1,981 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Windows.Storage.Streams</name>
+    </assembly>
+    <members>
+        <member name="T:Windows.Storage.Streams.ByteBuffer">
+            <summary>
+            Provides a byte array implementation of the IBuffer interface and its related interfaces.
+            </summary>
+            <remarks>
+            This class is intended for internal use of nanoFramework classes. The developer shouldn't use it directly.
+            </remarks>
+        </member>
+        <member name="M:Windows.Storage.Streams.ByteBuffer.#ctor(System.UInt32)">
+            <summary>
+            Initializes a new instance of the Buffer class with the specified capacity.
+            </summary>
+            <param name="capacity">The maximum number of bytes that the buffer can hold.</param>
+        </member>
+        <member name="P:Windows.Storage.Streams.ByteBuffer.Capacity">
+            <summary>
+            Gets the maximum number of bytes that the buffer can hold.
+            </summary>
+            <value>
+            The maximum number of bytes that the buffer can hold.
+            </value>
+        </member>
+        <member name="P:Windows.Storage.Streams.ByteBuffer.Length">
+            <summary>
+            Gets or sets the number of bytes currently in use in the buffer.
+            </summary>
+            <value>
+            The number of bytes currently in use in the buffer, which is less than or equal to the capacity of the buffer.
+            </value>
+        </member>
+        <member name="P:Windows.Storage.Streams.ByteBuffer.Data">
+            <summary>
+            Gets or sets the byte array backing this <see cref="T:Windows.Storage.Streams.ByteBuffer"/>.
+            </summary>
+            <value>
+            The byte array backing this <see cref="T:Windows.Storage.Streams.ByteBuffer"/>.
+            </value>
+        </member>
+        <member name="T:Windows.Storage.Streams.ByteOrder">
+            <summary>
+            Specifies the byte order of a stream.
+            </summary>
+            <remarks>nanoFramework API only supports LittleEndian order.</remarks>
+        </member>
+        <member name="F:Windows.Storage.Streams.ByteOrder.LittleEndian">
+            <summary>
+            The least significant byte (lowest address) is stored first.
+            </summary>
+        </member>
+        <member name="T:Windows.Storage.Streams.DataReader">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.#ctor(Windows.Storage.Streams.IInputStream)">
+            <summary>
+            Creates and initializes a new instance of the data reader.
+            </summary>
+            <param name="inputStream">The input stream.</param>
+        </member>
+        <member name="P:Windows.Storage.Streams.DataReader.ByteOrder">
+            <summary>
+            Gets or sets the byte order of the data in the input stream.
+            </summary>
+            <value>
+            One of the enumeration values.
+            </value>
+            <remarks>
+            nanoFramework doesn't this feature. ByteOrder is always <see cref="F:Windows.Storage.Streams.ByteOrder.LittleEndian"/>.
+            </remarks>
+        </member>
+        <member name="P:Windows.Storage.Streams.DataReader.InputStreamOptions">
+            <summary>
+            Gets or sets the read options for the input stream.
+            </summary>
+            <value>
+            One of the enumeration values.
+            </value>
+        </member>
+        <member name="P:Windows.Storage.Streams.DataReader.UnconsumedBufferLength">
+            <summary>
+            Gets the size of the buffer that has not been read.
+            </summary>
+            <value>
+            The size of the buffer that has not been read, in bytes.
+            </value>
+        </member>
+        <member name="P:Windows.Storage.Streams.DataReader.UnicodeEncoding">
+            <summary>
+            Gets or sets the Unicode character encoding for the input stream.
+            </summary>
+            <value>
+            One of the enumeration values.
+            </value>
+            <remarks>
+            nanoFramework doesn't this feature. UnicodeEncoding is always <see cref="F:Windows.Storage.Streams.UnicodeEncoding.Utf8"/>.
+            </remarks>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.DetachStream">
+            <summary>
+            Detaches a stream that was previously attached to the reader.
+            </summary>
+            <returns>The detached stream.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.Load(System.UInt32)">
+            <summary>
+            Loads data from the input stream.
+            </summary>
+            <param name="count">The count of bytes to load into the intermediate buffer.</param>
+            <returns>The operation.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.ReadBoolean">
+            <summary>
+            Reads a Boolean value from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.ReadBuffer(System.UInt32)">
+            <summary>
+            Reads a buffer from the input stream.
+            </summary>
+            <param name="length">The length of the buffer, in bytes.</param>
+            <returns>The buffer.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.ReadByte">
+            <summary>
+            Reads a byte value from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.ReadBytes(System.Byte[])">
+            <summary>
+            Reads an array of byte values from the input stream.
+            </summary>
+            <param name="value">The array of values.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.ReadDateTime">
+            <summary>
+            Reads a date and time value from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.ReadDouble">
+            <summary>
+            Reads a floating-point value from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.ReadGuid">
+            <summary>
+            Reads a GUID value from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.ReadInt16">
+            <summary>
+            Reads a 16-bit integer value from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.ReadInt32">
+            <summary>
+            Reads a 32-bit integer value from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.ReadInt64">
+            <summary>
+            Reads a 64-bit integer value from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.ReadSingle">
+            <summary>
+            Reads a floating-point value from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.ReadString(System.UInt32)">
+            <summary>
+            Reads a string value from the input stream.
+            </summary>
+            <param name="codeUnitCount">The length of the string.</param>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.ReadTimeSpan">
+            <summary>
+            Reads a time interval from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.ReadUInt16">
+            <summary>
+            Reads a 16-bit unsigned integer from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.ReadUInt32">
+            <summary>
+            Reads a 32-bit unsigned integer from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.ReadUInt64">
+            <summary>
+            Reads a 64-bit unsigned integer from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.IncreaseReadPosition(System.Int32)">
+            <summary>
+            Increases the backing buffer read position.
+            </summary>
+            <param name="count">How many bytes to read from the backing buffer.</param>
+            <returns>
+            The current buffer position before increasing it by <para>count</para>.
+            </returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.CheckReadPosition">
+            <summary>
+            Checks current read position and resets the backing buffer if all bytes have been read
+            </summary>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.CheckAvailableBytes(System.Int32)">
+            <summary>
+            Throws an <see cref="T:System.InvalidOperationException"/> if caller tries to read more bytes than the ones that are available in backing buffer.
+            </summary>
+            <param name="count">Number of bytes to be read</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataReader.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:Windows.Storage.Streams.DataWriter">
+            <summary>
+            Writes data to an output stream.
+            </summary>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.#ctor">
+            <summary>
+            Creates and initializes a new instance of the data writer.
+            </summary>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.#ctor(Windows.Storage.Streams.IOutputStream)">
+            <summary>
+            Creates and initializes a new instance of the data writer to an output stream.
+            </summary>
+            <param name="outputStream">The new output stream instance.</param>
+        </member>
+        <member name="P:Windows.Storage.Streams.DataWriter.ByteOrder">
+            <summary>
+            Gets or sets the byte order of the data in the output stream.
+            </summary>
+            <value>One of the enumeration values.</value>
+            <remarks>
+            nanoFramework doesn't this feature. ByteOrder is always <see cref="F:Windows.Storage.Streams.ByteOrder.LittleEndian"/>.
+            </remarks>
+        </member>
+        <member name="P:Windows.Storage.Streams.DataWriter.UnicodeEncoding">
+            <summary>
+            Gets or sets the Unicode character encoding for the output stream.
+            </summary>
+            <value>One of the enumeration values.</value>
+            <remarks>
+            nanoFramework doesn't this feature. UnicodeEncoding is always <see cref="F:Windows.Storage.Streams.UnicodeEncoding.Utf8"/>.
+            </remarks>
+        </member>
+        <member name="P:Windows.Storage.Streams.DataWriter.UnstoredBufferLength">
+            <summary>
+            Gets the size of the buffer that has not been used.
+            </summary>
+            <value>The available buffer length, in bytes.</value>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.DetachStream">
+            <summary>
+            Detaches a stream that was previously attached to the writer.
+            </summary>
+            <returns>The detached stream.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.Flush">
+            <summary>
+            Flushes data.
+            </summary>
+            <returns>The stream flush operation.</returns>
+            <remarks>
+            The Flush method ensures that the data has reached the target storage medium that the stream represents. For example, to improve application responsiveness and throughput, a file stream might respond to a write operation by copying the buffer into another temporary storage medium and returning immediately, while the target device begins writing the data concurrently.
+            The Flush method doesn't complete until all data specified in previous write calls has reached the target storage medium. If the data can't be written, or an error occurred during a write operation, the method returns false.
+            The Flush method may produce latencies and does not always guarantee durable and coherent storage of data.It's generally recommended to avoid this method if possible.
+            This method is specific to nanoFramework. The equivalent method in the UWP API is: FlushAsync.
+            </remarks>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.MeasureString(System.String)">
+            <summary>
+            Gets the size of a string.
+            </summary>
+            <param name="value">The string.</param>
+            <returns>The size of the string, in bytes.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.Store">
+            <summary>
+            Commits data in the buffer to a backing store.
+            </summary>
+            <returns>The store data operation.</returns>
+            <remarks>
+            This method is specific to nanoFramework. The equivalent method in the UWP API is: StoreAsync.
+            </remarks>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.WriteBoolean(System.Boolean)">
+            <summary>
+            Writes a Boolean value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.WriteBuffer(Windows.Storage.Streams.IBuffer)">
+            <summary>
+            Writes a number of bytes from a buffer to the output stream.
+            </summary>
+            <param name="buffer">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.WriteBuffer(Windows.Storage.Streams.IBuffer,System.UInt32,System.UInt32)">
+            <summary>
+            Writes a range of bytes from a buffer to the output stream.
+            </summary>
+            <param name="buffer">The buffer.</param>
+            <param name="start">The starting byte to be written.</param>
+            <param name="count">The number of bytes to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.WriteByte(System.Byte)">
+            <summary>
+            Writes a byte value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.WriteBytes(System.Byte[])">
+            <summary>
+            Writes an array of byte values to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.WriteDateTime(System.DateTime)">
+            <summary>
+            Writes a date and time value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.WriteDouble(System.Double)">
+            <summary>
+            Writes a floating-point value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.WriteGuid(System.Guid)">
+            <summary>
+            Writes a GUID value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.WriteInt16(System.Int16)">
+            <summary>
+            Writes a 16-bit integer value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.WriteInt32(System.Int32)">
+            <summary>
+            Writes a 32-bit integer value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.WriteInt64(System.Int64)">
+            <summary>
+            Writes a 64-bit integer value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.WriteSingle(System.Single)">
+            <summary>
+            Write a floating-point value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.WriteString(System.String)">
+            <summary>
+            Writes a string value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+            <returns>The length of the string.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.WriteTimeSpan(System.TimeSpan)">
+            <summary>
+            Writes a time interval value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.WriteUInt16(System.UInt16)">
+            <summary>
+            Writes a 16-bit unsigned integer value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.WriteUInt32(System.UInt32)">
+            <summary>
+            Writes a 32-bit unsigned integer value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.WriteUInt64(System.UInt64)">
+            <summary>
+            Writes a 64-bit unsigned integer value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.DataWriter.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:Windows.Storage.Streams.IBuffer">
+            <summary>
+            Represents a referenced array of bytes used by byte stream read and write interfaces. Buffer is the class implementation of this interface.
+            </summary>
+        </member>
+        <member name="P:Windows.Storage.Streams.IBuffer.Capacity">
+            <summary>
+            Gets the maximum number of bytes that the buffer can hold.
+            </summary>
+            <value>
+            The maximum number of bytes that the buffer can hold.
+            </value>
+        </member>
+        <member name="P:Windows.Storage.Streams.IBuffer.Length">
+            <summary>
+            Gets the number of bytes currently in use in the buffer.
+            </summary>
+            <value>
+            The number of bytes currently in use in the buffer which is less than or equal to the capacity of the buffer.
+            </value>
+        </member>
+        <member name="T:Windows.Storage.Streams.IDataReader">
+            <summary>
+            Provides read access to an input stream.
+            </summary>
+        </member>
+        <member name="P:Windows.Storage.Streams.IDataReader.ByteOrder">
+            <summary>
+            Gets or sets the byte order of the data in the input stream.
+            </summary>
+            <value>
+            One of the enumeration values.
+            </value>
+            <remarks>
+            nanoFramework doesn't this feature. ByteOrder is always <see cref="F:Windows.Storage.Streams.ByteOrder.LittleEndian"/>.
+            </remarks>
+        </member>
+        <member name="P:Windows.Storage.Streams.IDataReader.InputStreamOptions">
+            <summary>
+            Gets or sets the read options for the input stream.
+            </summary>
+            <value>
+            One of the enumeration values.
+            </value>
+        </member>
+        <member name="P:Windows.Storage.Streams.IDataReader.UnconsumedBufferLength">
+            <summary>
+            Gets the size of the buffer that has not been read.
+            </summary>
+            <value>
+            The size of the buffer that has not been read, in bytes.
+            </value>
+        </member>
+        <member name="P:Windows.Storage.Streams.IDataReader.UnicodeEncoding">
+            <summary>
+            Gets or sets the Unicode character encoding for the input stream.
+            </summary>
+            <value>
+            One of the enumeration values.
+            </value>
+            <remarks>
+            nanoFramework doesn't this feature. UnicodeEncoding is always <see cref="F:Windows.Storage.Streams.UnicodeEncoding.Utf8"/>.
+            </remarks>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataReader.DetachStream">
+            <summary>
+            Detaches a stream that was previously attached to the reader.
+            </summary>
+            <returns>The detached stream.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataReader.Load(System.UInt32)">
+            <summary>
+            Loads data from the input stream.
+            </summary>
+            <param name="count">The count of bytes to load into the intermediate buffer.</param>
+            <returns>The asynchronous operation.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataReader.ReadBoolean">
+            <summary>
+            Reads a Boolean value from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataReader.ReadBuffer(System.UInt32)">
+            <summary>
+            Reads a buffer from the input stream.
+            </summary>
+            <param name="length">The length of the buffer, in bytes.</param>
+            <returns>The buffer.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataReader.ReadByte">
+            <summary>
+            Reads a byte value from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataReader.ReadBytes(System.Byte[])">
+            <summary>
+            Reads an array of byte values from the input stream.
+            </summary>
+            <param name="value">The array of values.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataReader.ReadDateTime">
+            <summary>
+            Reads a date and time value from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataReader.ReadDouble">
+            <summary>
+            Reads a floating-point value from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataReader.ReadGuid">
+            <summary>
+            Reads a GUID value from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataReader.ReadInt16">
+            <summary>
+            Reads a 16-bit integer value from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataReader.ReadInt32">
+            <summary>
+            Reads a 32-bit integer value from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataReader.ReadInt64">
+            <summary>
+            Reads a 64-bit integer value from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataReader.ReadSingle">
+            <summary>
+            Reads a floating-point value from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataReader.ReadString(System.UInt32)">
+            <summary>
+            Reads a string value from the input stream.
+            </summary>
+            <param name="codeUnitCount">The length of the string.</param>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataReader.ReadTimeSpan">
+            <summary>
+            Reads a time interval from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataReader.ReadUInt16">
+            <summary>
+            Reads a 16-bit unsigned integer from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataReader.ReadUInt32">
+            <summary>
+            Reads a 32-bit unsigned integer from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataReader.ReadUInt64">
+            <summary>
+            Reads a 64-bit unsigned integer from the input stream.
+            </summary>
+            <returns>The value.</returns>
+        </member>
+        <member name="T:Windows.Storage.Streams.IDataWriter">
+            <summary>
+            Provides write access to an output stream.
+            </summary>
+        </member>
+        <member name="P:Windows.Storage.Streams.IDataWriter.ByteOrder">
+            <summary>
+            Gets or sets the byte order of the data in the output stream.
+            </summary>
+            <value>One of the enumeration values.</value>
+            <remarks>
+            nanoFramework doesn't this feature. ByteOrder is always <see cref="F:Windows.Storage.Streams.ByteOrder.LittleEndian"/>.
+            </remarks>
+        </member>
+        <member name="P:Windows.Storage.Streams.IDataWriter.UnicodeEncoding">
+            <summary>
+            Gets or sets the Unicode character encoding for the output stream.
+            </summary>
+            <value>One of the enumeration values.</value>
+            <remarks>
+            nanoFramework doesn't this feature. UnicodeEncoding is always <see cref="F:Windows.Storage.Streams.UnicodeEncoding.Utf8"/>.
+            </remarks>
+        </member>
+        <member name="P:Windows.Storage.Streams.IDataWriter.UnstoredBufferLength">
+            <summary>
+            Gets the size of the buffer that has not been used.
+            </summary>
+            <value>The available buffer length, in bytes.</value>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataWriter.DetachStream">
+            <summary>
+            Detaches a stream that was previously attached to the writer.
+            </summary>
+            <returns>The detached stream.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataWriter.Flush">
+            <summary>
+            Flushes data.
+            </summary>
+            <returns>The stream flush operation.</returns>
+            <remarks>
+            The Flush method ensures that the data has reached the target storage medium that the stream represents. For example, to improve application responsiveness and throughput, a file stream might respond to a write operation by copying the buffer into another temporary storage medium and returning immediately, while the target device begins writing the data concurrently.
+            The Flush method doesn't complete until all data specified in previous write calls has reached the target storage medium. If the data can't be written, or an error occurred during a write operation, the method returns false.
+            The Flush method may produce latencies and does not always guarantee durable and coherent storage of data.It's generally recommended to avoid this method if possible.
+            </remarks>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataWriter.MeasureString(System.String)">
+            <summary>
+            Gets the size of a string.
+            </summary>
+            <param name="value">The string.</param>
+            <returns>The size of the string, in bytes.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataWriter.Store">
+            <summary>
+            Commits data in the buffer to a backing store.
+            </summary>
+            <returns>The store data operation.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataWriter.WriteBoolean(System.Boolean)">
+            <summary>
+            Writes a Boolean value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataWriter.WriteBuffer(Windows.Storage.Streams.IBuffer)">
+            <summary>
+            Writes a number of bytes from a buffer to the output stream.
+            </summary>
+            <param name="buffer">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataWriter.WriteBuffer(Windows.Storage.Streams.IBuffer,System.UInt32,System.UInt32)">
+            <summary>
+            Writes a range of bytes from a buffer to the output stream.
+            </summary>
+            <param name="buffer">The buffer.</param>
+            <param name="start">The starting byte to be written.</param>
+            <param name="count">The number of bytes to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataWriter.WriteByte(System.Byte)">
+            <summary>
+            Writes a byte value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataWriter.WriteBytes(System.Byte[])">
+            <summary>
+            Writes an array of byte values to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataWriter.WriteDateTime(System.DateTime)">
+            <summary>
+            Writes a date and time value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataWriter.WriteDouble(System.Double)">
+            <summary>
+            Writes a floating-point value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataWriter.WriteGuid(System.Guid)">
+            <summary>
+            Writes a GUID value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataWriter.WriteInt16(System.Int16)">
+            <summary>
+            Writes a 16-bit integer value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataWriter.WriteInt32(System.Int32)">
+            <summary>
+            Writes a 32-bit integer value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataWriter.WriteInt64(System.Int64)">
+            <summary>
+            Writes a 64-bit integer value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataWriter.WriteSingle(System.Single)">
+            <summary>
+            Write a floating-point value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataWriter.WriteString(System.String)">
+            <summary>
+            Writes a string value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+            <returns>The length of the string.</returns>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataWriter.WriteTimeSpan(System.TimeSpan)">
+            <summary>
+            Writes a time interval value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataWriter.WriteUInt16(System.UInt16)">
+            <summary>
+            Writes a 16-bit unsigned integer value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataWriter.WriteUInt32(System.UInt32)">
+            <summary>
+            Writes a 32-bit unsigned integer value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="M:Windows.Storage.Streams.IDataWriter.WriteUInt64(System.UInt64)">
+            <summary>
+            Writes a 64-bit unsigned integer value to the output stream.
+            </summary>
+            <param name="value">The value to write.</param>
+        </member>
+        <member name="T:Windows.Storage.Streams.IInputStream">
+            <summary>
+            Represents a sequential stream of bytes to be read.
+            </summary>
+        </member>
+        <member name="M:Windows.Storage.Streams.IInputStream.Read(Windows.Storage.Streams.IBuffer,System.UInt32,Windows.Storage.Streams.InputStreamOptions)">
+            <summary>
+            Reads data from the stream.
+            </summary>
+            <param name="buffer">A buffer that is used to return the array of bytes that are read. The return value contains the buffer that holds the results.</param>
+            <param name="count">The number of bytes to read that is less than or equal to the Capacity value.</param>
+            <param name="options">Specifies the type of the asynchronous read operation.</param>
+            <returns>The number of bytes that were actually read.</returns>
+            <remarks>This method is specific to nanoFramework. The equivalent method in the UWP API is: ReadAsync(IBuffer buffer, UInt32 count, InputStreamOptions options).</remarks>
+        </member>
+        <member name="T:Windows.Storage.Streams.InMemoryRandomAccessStream">
+            <summary>
+            Provides random access of data in input and output streams that are stored in memory instead of on disk.
+            </summary>
+        </member>
+        <member name="P:Windows.Storage.Streams.InMemoryRandomAccessStream.CanRead">
+            <summary>
+            Gets a value that indicates whether the stream can be read from.
+            </summary>
+            <value>
+            True if the stream can be read from. Otherwise, false.
+            </value>
+        </member>
+        <member name="P:Windows.Storage.Streams.InMemoryRandomAccessStream.CanWrite">
+            <summary>
+            Gets a value that indicates whether the stream can be written to.
+            </summary>
+            <value>
+            True if the stream can be written to. Otherwise, false.
+            </value>
+        </member>
+        <member name="P:Windows.Storage.Streams.InMemoryRandomAccessStream.Position">
+            <summary>
+            Gets the byte offset of the stream.
+            </summary>
+            <value>
+            The number of bytes from the start of the stream.
+            </value>
+            <remarks>
+            The initial offset of a IRandomAccessStream is 0.
+            This offset is affected by both <see cref="T:Windows.Storage.Streams.IInputStream"/> and <see cref="T:Windows.Storage.Streams.IOutputStream"/> operations.
+            </remarks>
+        </member>
+        <member name="P:Windows.Storage.Streams.InMemoryRandomAccessStream.Length">
+            <summary>
+            Gets the number of bytes currently in use in the buffer.
+            </summary>
+            <value>
+            he number of bytes currently in use in the buffer, which is less than or equal to the capacity of the buffer.
+            </value>
+        </member>
+        <member name="P:Windows.Storage.Streams.InMemoryRandomAccessStream.Size">
+            <summary>
+            Gets or sets the size of the random access stream.
+            </summary>
+            <value>
+            The size of the stream.
+            </value>
+        </member>
+        <member name="M:Windows.Storage.Streams.InMemoryRandomAccessStream.#ctor">
+            <summary>
+            Creates a new instance of the InMemoryRandomAccessStream class.
+            </summary>
+        </member>
+        <member name="M:Windows.Storage.Streams.InMemoryRandomAccessStream.Read(Windows.Storage.Streams.IBuffer,System.UInt32,Windows.Storage.Streams.InputStreamOptions)">
+            <summary>
+            Reads data from the stream.
+            </summary>
+            <param name="buffer">A buffer that is used to return the array of bytes that are read. The return value contains the buffer that holds the results.</param>
+            <param name="count">The number of bytes to read that is less than or equal to the Capacity value.</param>
+            <param name="options">Specifies the type of the asynchronous read operation.</param>
+            <returns>The number of bytes that were actually read.</returns>
+            <remarks>This method is specific to nanoFramework. The equivalent method in the UWP API is: ReadAsync(IBuffer buffer, UInt32 count, InputStreamOptions options).</remarks>
+        </member>
+        <member name="M:Windows.Storage.Streams.InMemoryRandomAccessStream.Seek(System.UInt64)">
+             <summary>
+             Sets the position of the stream to the specified value.
+             </summary>
+             <param name="position">The new position of the stream.</param>
+             <remarks>
+             Warning! This method does not check the position to make sure the value is valid for the stream. If the position is invalid for the stream, the ReadAsync and WriteAsync methods will return an error if you call them.
+            </remarks>
+        </member>
+        <member name="M:Windows.Storage.Streams.InMemoryRandomAccessStream.Flush">
+            <summary>
+            Flushes data in a sequential stream.
+            </summary>
+            <returns>The stream flush operation.</returns>
+            <remarks>
+            The Flush method may produce latencies and does not always guarantee durable and coherent storage of data. It's generally recommended to avoid this method if possible.
+            This method is specific to nanoFramework. The equivalent method in the UWP API is: FlushAsync.
+            </remarks>
+        </member>
+        <member name="M:Windows.Storage.Streams.InMemoryRandomAccessStream.Write(System.Byte[])">
+            <summary>
+            Writes data in a sequential stream.
+            </summary>
+            <param name="buffer">A buffer that contains the data to be written.</param>
+            <returns>The byte writer operation.</returns>
+            <remarks>This method is specific to nanoFramework. The equivalent method in the UWP API is: WriteAsync.</remarks>
+        </member>
+        <member name="M:Windows.Storage.Streams.InMemoryRandomAccessStream.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:Windows.Storage.Streams.InputStreamOptions">
+            <summary>
+            Specifies the read options for an input stream.
+            </summary>
+        </member>
+        <member name="F:Windows.Storage.Streams.InputStreamOptions.None">
+            <summary>
+            No options are specified.
+            </summary>
+        </member>
+        <member name="F:Windows.Storage.Streams.InputStreamOptions.Partial">
+            <summary>
+            The asynchronous read operation completes when one or more bytes is available.
+            </summary>
+        </member>
+        <member name="F:Windows.Storage.Streams.InputStreamOptions.ReadAhead">
+            <summary>
+            The asynchronous read operation may optionally read ahead and prefetch additional bytes.
+            </summary>
+        </member>
+        <member name="T:Windows.Storage.Streams.IOutputStream">
+            <summary>
+            Represents a sequential stream of bytes to be written.
+            </summary>
+        </member>
+        <member name="M:Windows.Storage.Streams.IOutputStream.Flush">
+            <summary>
+            Flushes data in a sequential stream.
+            </summary>
+            <returns>The stream flush operation.</returns>
+            <remarks>
+            The Flush method may produce latencies and does not always guarantee durable and coherent storage of data. It's generally recommended to avoid this method if possible.
+            This method is specific to nanoFramework. The equivalent method in the UWP API is: FlushAsync.
+            </remarks>
+        </member>
+        <member name="M:Windows.Storage.Streams.IOutputStream.Write(System.Byte[])">
+            <summary>
+            Writes data in a sequential stream.
+            </summary>
+            <param name="buffer">A byte array buffer that contains the data to be written.</param>
+            <remarks>
+            This method is specific to nanoFramework. The equivalent method in the UWP API is: WriteAsync(IBuffer buffer).
+            </remarks>
+        </member>
+        <member name="T:Windows.Storage.Streams.IRandomAccessStream">
+            <summary>
+            Supports random access of data in input and output streams.
+            </summary>
+        </member>
+        <member name="P:Windows.Storage.Streams.IRandomAccessStream.CanRead">
+            <summary>
+            Gets a value that indicates whether the stream can be read from.
+            </summary>
+            <value>
+            True if the stream can be read from. Otherwise, false.
+            </value>
+        </member>
+        <member name="P:Windows.Storage.Streams.IRandomAccessStream.CanWrite">
+            <summary>
+            Gets a value that indicates whether the stream can be written to.
+            </summary>
+            <value>
+            True if the stream can be written to. Otherwise, false.
+            </value>
+        </member>
+        <member name="P:Windows.Storage.Streams.IRandomAccessStream.Position">
+            <summary>
+            Gets the byte offset of the stream.
+            </summary>
+            <value>
+            The number of bytes from the start of the stream.
+            </value>
+            <remarks>
+            The initial offset of a IRandomAccessStream is 0.
+            This offset is affected by both <see cref="T:Windows.Storage.Streams.IInputStream"/> and <see cref="T:Windows.Storage.Streams.IOutputStream"/> operations.
+            </remarks>
+        </member>
+        <member name="P:Windows.Storage.Streams.IRandomAccessStream.Size">
+            <summary>
+            Gets or sets the size of the random access stream.
+            </summary>
+            <value>
+            The size of the stream.
+            </value>
+        </member>
+        <member name="M:Windows.Storage.Streams.IRandomAccessStream.Seek(System.UInt64)">
+             <summary>
+             Sets the position of the stream to the specified value.
+             </summary>
+             <param name="position">The new position of the stream.</param>
+             <remarks>
+             Warning! This method does not check the position to make sure the value is valid for the stream. If the position is invalid for the stream, the ReadAsync and WriteAsync methods will return an error if you call them.
+            </remarks>
+        </member>
+        <member name="T:Windows.Storage.Streams.UnicodeEncoding">
+            <summary>
+            Specifies the type of character encoding for a stream.
+            </summary>
+            <remarks>nanoFramework API only supports UTF8 encoding.</remarks>
+        </member>
+        <member name="F:Windows.Storage.Streams.UnicodeEncoding.Utf8">
+            <summary>
+            The encoding is UTF-8.
+            </summary>
+        </member>
+    </members>
+</doc>

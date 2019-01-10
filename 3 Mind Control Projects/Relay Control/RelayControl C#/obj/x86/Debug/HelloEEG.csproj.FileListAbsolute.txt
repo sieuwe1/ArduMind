@@ -1,0 +1,87 @@
+C:\Users\neurosky\Downloads\ThinkGear SDK for .NET\ThinkGear SDK for .NET\Sample Projects\HelloEEG_EX\HelloEEG\bin\Debug\ConsoleApplication.exe.config
+C:\Users\neurosky\Downloads\ThinkGear SDK for .NET\ThinkGear SDK for .NET\Sample Projects\HelloEEG_EX\HelloEEG\bin\Debug\ConsoleApplication.exe
+C:\Users\neurosky\Downloads\ThinkGear SDK for .NET\ThinkGear SDK for .NET\Sample Projects\HelloEEG_EX\HelloEEG\bin\Debug\ConsoleApplication.pdb
+C:\Users\neurosky\Downloads\ThinkGear SDK for .NET\ThinkGear SDK for .NET\Sample Projects\HelloEEG_EX\HelloEEG\bin\Debug\ThinkGear.dll
+C:\Users\neurosky\Downloads\ThinkGear SDK for .NET\ThinkGear SDK for .NET\Sample Projects\HelloEEG_EX\HelloEEG\bin\Debug\Jayrock.Json.dll
+C:\Users\neurosky\Downloads\ThinkGear SDK for .NET\ThinkGear SDK for .NET\Sample Projects\HelloEEG_EX\HelloEEG\bin\Debug\NLog.dll
+C:\Users\neurosky\Downloads\ThinkGear SDK for .NET\ThinkGear SDK for .NET\Sample Projects\HelloEEG_EX\HelloEEG\bin\Debug\NLog.xml
+C:\Users\neurosky\Downloads\ThinkGear SDK for .NET\ThinkGear SDK for .NET\Sample Projects\HelloEEG_EX\HelloEEG\obj\x86\Debug\HelloEEG.csprojResolveAssemblyReference.cache
+C:\Users\neurosky\Downloads\ThinkGear SDK for .NET\ThinkGear SDK for .NET\Sample Projects\HelloEEG_EX\HelloEEG\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\neurosky\Downloads\ThinkGear SDK for .NET\ThinkGear SDK for .NET\Sample Projects\HelloEEG_EX\HelloEEG\obj\x86\Debug\ConsoleApplication.pdb
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\mhacks4-master\mindset files\ThinkGear SDK for .NET\Sample Projects\HelloEEG\bin\Debug\ConsoleApplication.exe.config
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\mhacks4-master\mindset files\ThinkGear SDK for .NET\Sample Projects\HelloEEG\bin\Debug\ConsoleApplication.exe
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\mhacks4-master\mindset files\ThinkGear SDK for .NET\Sample Projects\HelloEEG\bin\Debug\ConsoleApplication.pdb
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\mhacks4-master\mindset files\ThinkGear SDK for .NET\Sample Projects\HelloEEG\bin\Debug\ThinkGear.dll
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\mhacks4-master\mindset files\ThinkGear SDK for .NET\Sample Projects\HelloEEG\bin\Debug\Jayrock.Json.dll
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\mhacks4-master\mindset files\ThinkGear SDK for .NET\Sample Projects\HelloEEG\bin\Debug\NLog.dll
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\mhacks4-master\mindset files\ThinkGear SDK for .NET\Sample Projects\HelloEEG\bin\Debug\NLog.xml
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\mhacks4-master\mindset files\ThinkGear SDK for .NET\Sample Projects\HelloEEG\obj\x86\Debug\HelloEEG.csprojAssemblyReference.cache
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\mhacks4-master\mindset files\ThinkGear SDK for .NET\Sample Projects\HelloEEG\obj\x86\Debug\HelloEEG.Form1.resources
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\mhacks4-master\mindset files\ThinkGear SDK for .NET\Sample Projects\HelloEEG\obj\x86\Debug\HelloEEG.csproj.GenerateResource.cache
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\mhacks4-master\mindset files\ThinkGear SDK for .NET\Sample Projects\HelloEEG\obj\x86\Debug\HelloEEG.csproj.CoreCompileInputs.cache
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\mhacks4-master\mindset files\ThinkGear SDK for .NET\Sample Projects\HelloEEG\obj\x86\Debug\HelloEEG.csproj.CopyComplete
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\mhacks4-master\mindset files\ThinkGear SDK for .NET\Sample Projects\HelloEEG\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\mhacks4-master\mindset files\ThinkGear SDK for .NET\Sample Projects\HelloEEG\obj\x86\Debug\ConsoleApplication.pdb
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\ConsoleApplication.exe.config
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\ConsoleApplication.exe
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\ConsoleApplication.pdb
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\ThinkGear.dll
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\Jayrock.Json.dll
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\NLog.dll
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\NLog.xml
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\obj\x86\Debug\HelloEEG.csprojAssemblyReference.cache
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\obj\x86\Debug\HelloEEG.csproj.CoreCompileInputs.cache
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\obj\x86\Debug\HelloEEG.csproj.CopyComplete
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\obj\x86\Debug\ConsoleApplication.pdb
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\nanoFramework.Runtime.Events.dll
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\Windows.Devices.SerialCommunication.dll
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\Windows.Storage.Streams.dll
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\nanoFramework.Runtime.Events.pdb
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\nanoFramework.Runtime.Events.xml
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\Windows.Devices.SerialCommunication.pdb
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\Windows.Devices.SerialCommunication.xml
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\Windows.Storage.Streams.pdb
+C:\Users\sieuw\Desktop\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\Windows.Storage.Streams.xml
+C:\Users\sieuw\Desktop\fontys\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\ConsoleApplication.exe.config
+C:\Users\sieuw\Desktop\fontys\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\ConsoleApplication.exe
+C:\Users\sieuw\Desktop\fontys\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\ConsoleApplication.pdb
+C:\Users\sieuw\Desktop\fontys\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\nanoFramework.Runtime.Events.dll
+C:\Users\sieuw\Desktop\fontys\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\ThinkGear.dll
+C:\Users\sieuw\Desktop\fontys\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\Windows.Devices.SerialCommunication.dll
+C:\Users\sieuw\Desktop\fontys\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\Windows.Storage.Streams.dll
+C:\Users\sieuw\Desktop\fontys\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\Jayrock.Json.dll
+C:\Users\sieuw\Desktop\fontys\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\NLog.dll
+C:\Users\sieuw\Desktop\fontys\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\nanoFramework.Runtime.Events.pdb
+C:\Users\sieuw\Desktop\fontys\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\nanoFramework.Runtime.Events.xml
+C:\Users\sieuw\Desktop\fontys\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\Windows.Devices.SerialCommunication.pdb
+C:\Users\sieuw\Desktop\fontys\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\Windows.Devices.SerialCommunication.xml
+C:\Users\sieuw\Desktop\fontys\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\Windows.Storage.Streams.pdb
+C:\Users\sieuw\Desktop\fontys\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\Windows.Storage.Streams.xml
+C:\Users\sieuw\Desktop\fontys\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\bin\Debug\NLog.xml
+C:\Users\sieuw\Desktop\fontys\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\obj\x86\Debug\HelloEEG.csprojAssemblyReference.cache
+C:\Users\sieuw\Desktop\fontys\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\obj\x86\Debug\HelloEEG.csproj.CoreCompileInputs.cache
+C:\Users\sieuw\Desktop\fontys\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\obj\x86\Debug\HelloEEG.csproj.CopyComplete
+C:\Users\sieuw\Desktop\fontys\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\sieuw\Desktop\fontys\neurosky gedachte herkenning project\Moodlight 2\HelloEEG\obj\x86\Debug\ConsoleApplication.pdb
+C:\Users\sieuw\Documents\GitHub\ArduMind\Relay Control\HelloEEG\bin\Debug\ConsoleApplication.exe.config
+C:\Users\sieuw\Documents\GitHub\ArduMind\Relay Control\HelloEEG\bin\Debug\ConsoleApplication.exe
+C:\Users\sieuw\Documents\GitHub\ArduMind\Relay Control\HelloEEG\bin\Debug\ConsoleApplication.pdb
+C:\Users\sieuw\Documents\GitHub\ArduMind\Relay Control\HelloEEG\bin\Debug\nanoFramework.Runtime.Events.dll
+C:\Users\sieuw\Documents\GitHub\ArduMind\Relay Control\HelloEEG\bin\Debug\ThinkGear.dll
+C:\Users\sieuw\Documents\GitHub\ArduMind\Relay Control\HelloEEG\bin\Debug\Windows.Devices.SerialCommunication.dll
+C:\Users\sieuw\Documents\GitHub\ArduMind\Relay Control\HelloEEG\bin\Debug\Windows.Storage.Streams.dll
+C:\Users\sieuw\Documents\GitHub\ArduMind\Relay Control\HelloEEG\bin\Debug\Jayrock.Json.dll
+C:\Users\sieuw\Documents\GitHub\ArduMind\Relay Control\HelloEEG\bin\Debug\NLog.dll
+C:\Users\sieuw\Documents\GitHub\ArduMind\Relay Control\HelloEEG\bin\Debug\nanoFramework.Runtime.Events.pdb
+C:\Users\sieuw\Documents\GitHub\ArduMind\Relay Control\HelloEEG\bin\Debug\nanoFramework.Runtime.Events.xml
+C:\Users\sieuw\Documents\GitHub\ArduMind\Relay Control\HelloEEG\bin\Debug\Windows.Devices.SerialCommunication.pdb
+C:\Users\sieuw\Documents\GitHub\ArduMind\Relay Control\HelloEEG\bin\Debug\Windows.Devices.SerialCommunication.xml
+C:\Users\sieuw\Documents\GitHub\ArduMind\Relay Control\HelloEEG\bin\Debug\Windows.Storage.Streams.pdb
+C:\Users\sieuw\Documents\GitHub\ArduMind\Relay Control\HelloEEG\bin\Debug\Windows.Storage.Streams.xml
+C:\Users\sieuw\Documents\GitHub\ArduMind\Relay Control\HelloEEG\bin\Debug\NLog.xml
+C:\Users\sieuw\Documents\GitHub\ArduMind\Relay Control\HelloEEG\obj\x86\Debug\HelloEEG.csprojAssemblyReference.cache
+C:\Users\sieuw\Documents\GitHub\ArduMind\Relay Control\HelloEEG\obj\x86\Debug\HelloEEG.csproj.CoreCompileInputs.cache
+C:\Users\sieuw\Documents\GitHub\ArduMind\Relay Control\HelloEEG\obj\x86\Debug\HelloEEG.csproj.CopyComplete
+C:\Users\sieuw\Documents\GitHub\ArduMind\Relay Control\HelloEEG\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\sieuw\Documents\GitHub\ArduMind\Relay Control\HelloEEG\obj\x86\Debug\ConsoleApplication.pdb

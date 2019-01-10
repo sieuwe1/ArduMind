@@ -1,0 +1,393 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Windows.Devices.SerialCommunication</name>
+    </assembly>
+    <members>
+        <member name="T:Windows.Devices.SerialCommunication.PinChangedEventArgs">
+            <summary>
+            Represents the object that is passed as a parameter to the event handler that is invoked when the state of a signal line changes on the serial port.
+            </summary>
+            <remarks>
+            At times, the state of a signal line can change on the serial port. For example, when the break state is enabled on the serial port causing data transmission to stop. The event is reported by invoking the app-implemented PinChanged event handler. That event handler's parameter is a PinChangedEventArgs object. Inspect the PinChange property to determine the type of signal line. Those values are defined in the SerialPinChange enumeration.
+            </remarks>
+        </member>
+        <member name="P:Windows.Devices.SerialCommunication.PinChangedEventArgs.PinChange">
+            <summary>
+            Gets the type of signal change that caused the event on the serial port.
+            </summary>
+            <value>
+            One of the values defined in SerialPinChange enumeration.
+            </value>
+        </member>
+        <member name="T:Windows.Devices.SerialCommunication.ErrorReceivedEventArgs">
+            <summary>
+            Represents the object that is passed as a parameter to the event handler that is invoked when error occurs on the serial port.
+            </summary>
+            <remarks>
+            ErrorReceivedEventArgs is used to determine the type of error condition. When error occurs on the port, the previously registered ErrorReceived event handler is invoked. That event handler's parameter is a ErrorReceivedEventArgs object. After the event handler is invoked, you can determine the error condition by using the Error property.
+            </remarks>
+        </member>
+        <member name="P:Windows.Devices.SerialCommunication.ErrorReceivedEventArgs.Error">
+            <summary>
+            Gets the character type received that caused the event on the serial port.
+            </summary>
+            <value>
+            One of the values defined in the SerialError enumeration.
+            </value>
+        </member>
+        <member name="T:Windows.Devices.SerialCommunication.SerialDataReceivedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Windows.Devices.SerialCommunication.SerialDevice.DataReceived"/> event.
+            </summary>
+            <remarks>
+            This method is specific to nanoFramework. There is no equivalent method in the UWP API.
+            </remarks>
+        </member>
+        <member name="P:Windows.Devices.SerialCommunication.SerialDataReceivedEventArgs.EventType">
+            <summary>
+            Gets or sets the event type.
+            </summary>
+        </member>
+        <member name="T:Windows.Devices.SerialCommunication.SerialData">
+            <summary>
+            Specifies the type of character that was received on the <see cref="T:Windows.Devices.SerialCommunication.SerialDeviceInputStream"/> serial port of a <see cref="T:Windows.Devices.SerialCommunication.SerialDevice"/> object.
+            </summary>
+            <remarks>
+            This enum is specific to nanoFramework. There is no equivalent in the UWP API.
+            </remarks>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialData.Chars">
+            <summary>
+            A character was received and placed in the input stream.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialData.WatchChar">
+            <summary>
+            The character to watch was received and placed in the input stream.
+            </summary>
+        </member>
+        <member name="T:Windows.Devices.SerialCommunication.SerialDevice">
+            <summary>
+            Represents a serial port. The object provides methods and properties that an app can use to find the port (in the system).
+            </summary>
+        </member>
+        <member name="P:Windows.Devices.SerialCommunication.SerialDevice.WatchChar">
+            <summary>
+            Sets a character to watch for in the incoming data stream.
+            </summary>
+            <remarks>
+            This property is specific to nanoFramework. There is no equivalent in the UWP API.
+            
+            When calling <see cref="M:Windows.Storage.Streams.DataReader.Load(System.UInt32)"/> in the <see cref="P:Windows.Devices.SerialCommunication.SerialDevice.InputStream"/> the operation will return immediately if this character is received in the incoming data stream. No matter if the requested quantity of bytes hasn't been read.
+            Also if this character is received in the incoming data stream, the <see cref="E:Windows.Devices.SerialCommunication.SerialDevice.DataReceived"/> event is fired with it's <see cref="T:Windows.Devices.SerialCommunication.SerialData"/> parameter set to <see cref="F:Windows.Devices.SerialCommunication.SerialData.WatchChar"/>.
+            </remarks>
+        </member>
+        <member name="P:Windows.Devices.SerialCommunication.SerialDevice.BaudRate">
+            <summary>
+            Gets or sets the baud rate.
+            </summary>
+            <value>
+            The baud rate of the serial port.
+            </value>
+            <remarks>
+            The property is set on the <see cref="T:Windows.Devices.SerialCommunication.SerialDevice"/> object that represents the serial port. The baud rate must be supported by the serial port.
+            </remarks>
+        </member>
+        <member name="P:Windows.Devices.SerialCommunication.SerialDevice.BytesReceived">
+            <summary>
+            Represents the number of bytes received by the last read operation of the input stream.
+            </summary>
+            <value>
+            The number of bytes received by the last read operation of the input stream.
+            </value>
+        </member>
+        <member name="P:Windows.Devices.SerialCommunication.SerialDevice.BytesToRead">
+            <summary>
+            Gets the number of bytes of data available in the input stream.
+            </summary>
+            <value>
+            The number of bytes of data in the input stream.
+            </value>
+            <remarks>
+            This property is specific to nanoFramework. There is no equivalent one in the UWP API.
+            </remarks>
+        </member>
+        <member name="P:Windows.Devices.SerialCommunication.SerialDevice.DataBits">
+            <summary>
+            The number of data bits in each character value that is transmitted or received, and does not include parity bits or stop bits.
+            </summary>
+            <value>
+            The number of data bits in each character value that is transmitted or received.
+            </value>
+            <remarks>
+            DataBits corresponds to the WordLength member of the SERIAL_LINE_CONTROL structure.
+            </remarks>
+        </member>
+        <member name="P:Windows.Devices.SerialCommunication.SerialDevice.Handshake">
+            <summary>
+            Gets or sets the handshaking protocol for flow control.
+            </summary>
+            <value>
+            One of the values defined in SerialHandshake enumeration.
+            </value>
+        </member>
+        <member name="P:Windows.Devices.SerialCommunication.SerialDevice.InputStream">
+            <summary>
+            Input stream that contains the data received on the serial port.
+            </summary>
+            <value>
+            Input stream that contains the data received.
+            </value>
+            <remarks>
+            To access data received on the port, get the input stream from <see cref="T:Windows.Devices.SerialCommunication.SerialDevice"/> object, and then use the DataReader to read data.
+            </remarks>
+        </member>
+        <member name="P:Windows.Devices.SerialCommunication.SerialDevice.OutputStream">
+            <summary>
+            Gets an output stream to which the app can write data to transmit through the serial port.
+            </summary>
+            <remarks>
+            To write data, first get the output stream from the <see cref="T:Windows.Devices.SerialCommunication.SerialDevice"/> object by using <see cref="P:Windows.Devices.SerialCommunication.SerialDevice.OutputStream"/> property and then use the DataWriter object to write the actual buffer.
+            </remarks>
+        </member>
+        <member name="P:Windows.Devices.SerialCommunication.SerialDevice.Parity">
+            <summary>
+            Gets or sets the parity bit for error-checking.
+            </summary>
+            <value>
+            One of the values defined in SerialParity enumeration.
+            </value>
+            <remarks>
+            In serial communication, the parity bit is used as an error-checking procedure. In data transmission that uses parity checking, the bit format is 7 data bits-x-1 stop bit, where x is the parity bit. That bit indicates whether the number of 1s in the data byte is even or odd. The parity bit can be E (even), O (odd), M (mark), or S (space). Those values are defined in the SerialParity enumeration.
+            For example, if the format is 7-E-1 and the data bits are 0001000, the parity bit is set to 1 to make sure there are even number of 1s.
+            </remarks>
+        </member>
+        <member name="P:Windows.Devices.SerialCommunication.SerialDevice.PortName">
+            <summary>
+            Gets the port name for serial communications.
+            </summary>
+            <value>
+            The communication port name. For example "COM1".
+            </value>
+        </member>
+        <member name="P:Windows.Devices.SerialCommunication.SerialDevice.ReadTimeout">
+            <summary>
+            Gets or sets the time-out value for a read operation.
+            </summary>
+            <value>
+            The span of time before a time-out occurs when a read operation does not finish.
+            </value>
+        </member>
+        <member name="P:Windows.Devices.SerialCommunication.SerialDevice.StopBits">
+            <summary>
+            Gets or sets the standard number of stop bits per byte.
+            </summary>
+            <value>
+            One of the values defined in the SerialStopBitCount enumeration.
+            </value>
+            <remarks>
+            In serial communication, a transmission begins with a start bit, followed by 8 bits of data, and ends with a stop bit. The purpose of the stop bit is to separate each unit of data or to indicate that no data is available for transmission.
+            </remarks>
+        </member>
+        <member name="P:Windows.Devices.SerialCommunication.SerialDevice.WriteTimeout">
+            <summary>
+            Gets or sets the time-out value for a write operation.
+            </summary>
+            <value>
+            The span of time before a time-out occurs when a write operation does not finish.
+            </value>
+        </member>
+        <member name="M:Windows.Devices.SerialCommunication.SerialDevice.FromId(System.String)">
+            <summary>
+            Creates a <see cref="T:Windows.Devices.SerialCommunication.SerialDevice"/> object.
+            </summary>
+            <param name="deviceId">The device instance path of the device. To obtain that value, get the DeviceInformation.Id property value.</param>
+            <returns>
+            Returns an <see cref="T:Windows.Devices.SerialCommunication.SerialDevice"/> object.
+            </returns>
+            <remarks>This method is specific to nanoFramework. The equivalent method in the UWP API is: FromIdAsync.</remarks>
+        </member>
+        <member name="M:Windows.Devices.SerialCommunication.SerialDevice.GetDeviceSelector">
+            <summary>
+            Gets all the available Serial devices available on the system.
+            </summary>
+            <returns>
+            String containing all the serial devices available in the system.
+            </returns>
+            /// <remarks>This method is specific to nanoFramework. The equivalent method in the UWP API returns an Advanced Query Syntax (AQS) string.</remarks>
+        </member>
+        <member name="E:Windows.Devices.SerialCommunication.SerialDevice.DataReceived">
+            <summary>
+            Indicates that data has been received through a <see cref="T:Windows.Devices.SerialCommunication.SerialDevice"/> object.
+            </summary>
+            <remarks>
+            This event is specific to nanoFramework. There is no equivalent method in the UWP API.
+            
+            Data events can be caused by any of the items in the <see cref="T:Windows.Devices.SerialCommunication.SerialData"/> enumeration. Because the operating system determines whether to raise this event or not, not all parity errors may be reported.
+            The <see cref="E:Windows.Devices.SerialCommunication.SerialDevice.DataReceived"/> event is also raised if the <see cref="P:Windows.Devices.SerialCommunication.SerialDevice.WatchChar"/> character is received, regardless of the number of bytes available in the <see cref="P:Windows.Devices.SerialCommunication.SerialDevice.InputStream"/>.
+            The <see cref="E:Windows.Devices.SerialCommunication.SerialDevice.DataReceived"/> event is not guaranteed to be raised for every byte received. Use the <see cref="P:Windows.Devices.SerialCommunication.SerialDevice.BytesReceived"/> property or the available bytes property of the <see cref="P:Windows.Devices.SerialCommunication.SerialDevice.InputStream"/> to determine how much data is available to be read from the <see cref="P:Windows.Devices.SerialCommunication.SerialDevice.InputStream"/>.
+            </remarks>
+        </member>
+        <member name="M:Windows.Devices.SerialCommunication.SerialDevice.OnSerialDataReceivedInternal(Windows.Devices.SerialCommunication.SerialData)">
+            <summary>
+            Handles internal events and re-dispatches them to the publicly subscribed delegates.
+            </summary>
+            <param name="eventType">The <see cref="T:Windows.Devices.SerialCommunication.SerialData"/> event type.</param>
+        </member>
+        <member name="T:Windows.Devices.SerialCommunication.SerialDeviceController">
+            <summary>
+            This class is used to keep tabs on what serial ports are open.
+            </summary>
+        </member>
+        <member name="P:Windows.Devices.SerialCommunication.SerialDeviceController.DeviceCollection">
+            <summary>
+            Device collection associated with this <see cref="T:Windows.Devices.SerialCommunication.SerialDeviceController"/>.
+            </summary>
+            <remarks>
+            This collection is for internal use only.
+            </remarks>
+        </member>
+        <member name="M:Windows.Devices.SerialCommunication.SerialDeviceController.GetDefault">
+            <summary>
+            Gets the default serial device controller for the system.
+            </summary>
+            <returns>The default GPIO controller for the system, or null if the system has no GPIO controller.</returns>
+        </member>
+        <member name="T:Windows.Devices.SerialCommunication.SerialError">
+            <summary>
+            Defines values for error conditions that can occur on the serial port.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialError.BufferOverrun">
+            <summary>
+            A character-buffer overrun has occurred. The next character is lost.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialError.Frame">
+            <summary>
+            The hardware detected a framing error.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialError.ReceiveFull">
+            <summary>
+            An input buffer overflow has occurred. There is either no room in the input buffer, or a character was received after the end-of-file (EOF) character.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialError.ReceiveParity">
+            <summary>
+            The hardware detected a parity error.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialError.TransmitFull">
+            <summary>
+            The application tried to transmit a character, but the output buffer was full.
+            </summary>
+        </member>
+        <member name="T:Windows.Devices.SerialCommunication.SerialHandshake">
+            <summary>
+            Defines values for hardware and software flow control protocols used in serial communication. The values are used by Handshake property on the SerialDevice object.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialHandshake.None">
+            <summary>
+            No protocol is used for the handshake.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialHandshake.RequestToSend">
+            <summary>
+            When the port is receiving data and if the read buffer is full, the Request-to-Send (RTS) line is set to false. When buffer is available, the line is set to true. When the serial port is transmitting data, CTS line is set to false and the port does not send data until there is room in the write buffer.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialHandshake.RequestToSendXOnXOff">
+            <summary>
+            Both RequestToSend and XOnXOff controls are used for flow control.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialHandshake.XOnXOff">
+            <summary>
+            The serial port sends an Xoff control to inform the sender to stop sending data. When ready, the port sends an Xon control to inform he sender that the port is now ready to receive data.
+            </summary>
+        </member>
+        <member name="T:Windows.Devices.SerialCommunication.SerialParity">
+            <summary>
+            Defines values for the parity bit for the serial data transmission. The values are used by the Parity property on the SerialDevice object.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialParity.None">
+            <summary>
+            No parity check occurs.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialParity.Even">
+            <summary>
+            Sets the parity bit so that the total count of data bits set is an even number.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialParity.Mark">
+            <summary>
+            Leaves the parity bit set to 1.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialParity.Odd">
+            <summary>
+            Sets the parity bit so that the total count of data bits set is an odd number.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialParity.Space">
+            <summary>
+            Leaves the parity bit set to 0.
+            </summary>
+        </member>
+        <member name="T:Windows.Devices.SerialCommunication.SerialPinChange">
+            <summary>
+            Defines values for types of signal state changes on the serial port.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialPinChange.BreakSignal">
+            <summary>
+            Change in the break signal state.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialPinChange.CarrierDetect">
+            <summary>
+            Change in the Carrier Detect line for the port.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialPinChange.ClearToSend">
+            <summary>
+            Change in the Clear-to-Send line for the port.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialPinChange.DataSetReady">
+            <summary>
+            Change in the state of the Data Set Ready (DSR) signal.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialPinChange.RingIndicator">
+            <summary>
+            Change in the ring indicator state.
+            </summary>
+        </member>
+        <member name="T:Windows.Devices.SerialCommunication.SerialStopBitCount">
+            <summary>
+            Defines values that indicate the number of stop bits used in a transmission. The values are used by the StopBits property on the SerialDevice object.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialStopBitCount.One">
+            <summary>
+            One stop bit is used.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialStopBitCount.OnePointFive">
+            <summary>
+            1.5 stop bits are used.
+            </summary>
+        </member>
+        <member name="F:Windows.Devices.SerialCommunication.SerialStopBitCount.Two">
+            <summary>
+            Two stop bits are used.
+            </summary>
+        </member>
+    </members>
+</doc>
