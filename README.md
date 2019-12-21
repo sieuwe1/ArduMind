@@ -1,6 +1,8 @@
 # ArduMind
 A Simple to use template for creating your own Mind controlled Arduino projects with C# and the Neurosky EEG Headset
 
+[![Demo](https://img.youtube.com/vi/kbzIDT0Aby8/0.jpg)](https://www.youtube.com/watch?v=kbzIDT0Aby8)
+
 # Moodlight Example
 The Moodlight app uses a arduino with a RGB led to show the current meditation value of the user. The meditation value changes when the user becomes more stressed. This app converts the meditation value between 0 and 100 to a rg value for the RGB Led. The RGB led will be green when the user is unstressed an will turn less green and more red when the user becomes more stressed. In the middle the color will be yellow.
 
